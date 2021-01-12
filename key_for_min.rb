@@ -3,10 +3,13 @@
 
 def key_for_min_value(name_hash)
   if name_hash.empty?
-    puts "Nil"
+    smallest_name = nil
+    #puts "Nil"
   else
-    puts "Not nil"
+    smallest_name = "not nil"
+    #puts "Not nil"
   end
+  puts smallest_name
 end
 
 
