@@ -6,8 +6,14 @@ def key_for_min_value(name_hash)
     smallest_name = nil
     #puts "Nil"
   else
-    smallest_name = "not nil"
-    #puts "Not nil"
+    smallest_name = ""
+    smallest_number = 999999
+    name_hash.each do |name, value|
+      if value < smallest_number
+        smallest_number = value
+        smallest_name = name
+      end
+    end
   end
   puts smallest_name
 end
