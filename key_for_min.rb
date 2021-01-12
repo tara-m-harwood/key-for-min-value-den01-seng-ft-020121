@@ -2,12 +2,19 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  
+  smallest_number = 999999999
+  smallest_name = ''
   name_hash.each do |name, value|
-   puts name_hash[:name]
+   if name_hash[:value] < smallest_number
+     smallest_number = name_hash[:value]
+     smallest_name = name_hash[:name]
+   end
   end
+puts smallest_number
+puts smallest_name
+smallest_name
+end
 
-puts "Hello World!"
 
 hash = {:blake => 500, :ashley => 2, :adam => 1}
 
