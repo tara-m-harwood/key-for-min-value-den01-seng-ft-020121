@@ -8,5 +8,6 @@ def key_for_min_value(name_hash)
  puts smallest_name
 end
 
+puts "Hello World!"
 hash = {:blake => 500, :ashley => 2, :adam => 1}
 key_for_min_value(hash)
