@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   if name_hash = {}
-    puts NIL
+    return name_hash
   else
     puts "Not nil"
   end
