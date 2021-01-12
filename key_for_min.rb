@@ -4,12 +4,7 @@
 def key_for_min_value(name_hash)
  smallest_number = name_hash[:name]
  smallest_name = ''
- name_hash.each do |name, number|
-   if number < smallest_number
-     smallest_number = number
-     smallest_name = name
-   end
-  end 
+ 
   puts smallest_number
   smallest_name
 end
