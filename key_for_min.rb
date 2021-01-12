@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   smallest_number = 999999999
-  smallest_name = ''
+  smallest_name = ' '
   name_hash.each do |name, value|
    if name_hash[:value] < smallest_number
      smallest_number = name_hash[:value]
