@@ -5,13 +5,13 @@ def key_for_min_value(name_hash)
   smallest_number = 999999999
   smallest_name = ' '
   name_hash.each do |name, value|
-    puts value
+    if value < smallest_number
+     puts value
+    end
   end
 end
 
 
 hash = {:blake => 500, :ashley => 2, :adam => 1}
-
-puts hash[:blake]
 
 key_for_min_value(hash)
