@@ -8,5 +8,7 @@ end
 puts "Hello World!"
 
 hash = {:blake => 500, :ashley => 2, :adam => 1}
-puts hash[0]
+
+puts hash[:blake]
+
 key_for_min_value(hash)
